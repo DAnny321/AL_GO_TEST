@@ -4,6 +4,18 @@
 
 pageextension 50110 CustomerListExt extends "Customer List"
 {
+    layout
+    {
+        addlast(Control1)
+        {
+            field(Prova; Rec.Prova)
+            {
+                ApplicationArea = All;
+                ToolTip = 'Specifies the Prova code.';
+            }
+        }
+    }
+
     trigger OnOpenPage();
     begin
         Message('App published: Hello world ciao');
